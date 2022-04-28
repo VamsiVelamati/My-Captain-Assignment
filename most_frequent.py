@@ -6,5 +6,6 @@ def most_frequent(string):
         else:
             d[key] += 1
     return d
-
-print (most_frequent('mississippi'))
+ans=  (most_frequent('mississippi'))
+import operator
+print(dict(sorted(ans.items(),key=operator.itemgetter(1))))
